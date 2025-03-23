@@ -23,6 +23,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/arm64
-          tags:
-           - ghcr.io/andlinger/kubernetes-deploy-image:${{ github.ref_name }}
+          tags: ghcr.io/andlinger/kubernetes-deploy-image:${{ github.ref_name }}
           push: true
